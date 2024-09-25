@@ -1,4 +1,4 @@
-
+![alt text](https://github.com/tarza2/alx-system_engineering-devops/blob/main/0x11-what_happens_when_your_type_google_com_in_your_browser_and_press_enter/web%20layer.png)
 # HTTPS Request Flow: From Browser to Webpage
 
 This README describes the detailed flow that happens when a user enters "https://www.google.com" into their web browser and presses Enter. The process involves several steps, including DNS resolution, encrypted communication, firewall checks, load balancing, web and application server interaction, and database queries.
