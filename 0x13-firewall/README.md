@@ -1,31 +1,22 @@
-# :shell: 0x13 - Firewall :shell:
+# 0x13. Firewall
 
-In this project I will be configuring a firewall for my servers. I will be using `ufw` firewall software.
+## Description
+What you should learn from this project:
 
-## :running: Getting Started
+---
 
-* [Ubuntu 14.04 LTS](http://releases.ubuntu.com/14.04/) - Operating system reqd.
-
-## :warning: Prerequisites
-
-* Must have `git` installed
-
-* Must have repository cloned
+### [0. Firewall ABC](./0-firewall_ABC)
+* Pick one answer for every question.
 
 
-```
-$ sudo apt-get install git
-```
-
-## :blue_book: Authors
-* **Bennett Dixon** - [@BennettDixon](https://github.com/BennettDixon)
-
-## :mag: License
-
-This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/BennettDixon/holberton-system_engineering-devops/blob/master/LICENSE.md) file for details
+### [1. Block all incoming traffic but](./1-block_all_incoming_traffic_but)
+* Let’s install the ufw firewall and setup a few rules on web-01.
 
 
+### [2. Port forwarding](./100-port_forwarding)
+* Firewalls can not only filter requests, they can also forward them.
 
-## :mega: Acknowledgments
+---
 
-* Holberton School (providing guidance)
+## Author
+* **Geoffrey Zoref** - [Gzoref](https://github.com/Gzoref)
