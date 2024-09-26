@@ -1,22 +1,14 @@
-# 0x13. Firewall
+# Firewall
 
-## Description
-What you should learn from this project:
+In this project, I used `ufw` to configure firewalls on my issued web servers.
 
----
+## Tasks :page_with_curl:
 
-### [0. Firewall ABC](./0-firewall_ABC)
-* Pick one answer for every question.
+* **0. Block all incoming traffic but**
+  * [0-block_all_incoming_traffic_but](./0-block_all_incoming_traffic_but): Bash
+  script that installs a `ufw` firewall to block all incoming traffic except for
+  ports `22`, `443` and `80` on a web server.
 
-
-### [1. Block all incoming traffic but](./1-block_all_incoming_traffic_but)
-* Let’s install the ufw firewall and setup a few rules on web-01.
-
-
-### [2. Port forwarding](./100-port_forwarding)
-* Firewalls can not only filter requests, they can also forward them.
-
----
-
-## Author
-* **Geoffrey Zoref** - [Gzoref](https://github.com/Gzoref)
+* **1. Port forwarding**
+  * [100-port_forwarding](./100-port_forwarding): `ufw` configuration file that
+  configures a firewall to redirect port `8080/TCP` to port `80/TCP`.
