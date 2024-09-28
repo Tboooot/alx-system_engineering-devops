@@ -1,23 +1,44 @@
-# Configuration management
+# 0x0A. Configuration management
 
-In this project, I started working with Puppet as a configuration management
-tool. I practiced writing Puppet manifest files to create a file, install a
-package, and execute a command.
+## Resource
 
-## Tasks :page_with_curl:
+- [Intro to Configuration Management](https://www.digitalocean.com/community/tutorials/an-introduction-to-configuration-management)
+- [Puppet resource type: file](https://puppet.com/docs/puppet/5.5/types/file.html) (*Check "Resource types" for all manifest types in the left menu*)
+- [Puppet’s Declarative Language: Modeling Instead of Scripting](https://puppet.com/blog/puppets-declarative-language-modeling-instead-of-scripting/)
+- [Puppet lint](http://puppet-lint.com/)
+- [Puppet emacs mode](https://github.com/voxpupuli/puppet-mode)
+- [Puppet CookBook](https://www.puppetcookbook.com/)
 
-* **0. Create a file**
-  * [0-create_a_file.pp](./0-create_a_file.pp): Puppet manifest file that
-  creates a file `school` in the `/tmp` directory.
-    * File permissions: `0744`.
-    * File group: `www-data`.
-    * File owner: `www-data`.
-    * File content: `I love Puppet`.
+## Installing `puppet` and `puppet-lint`
 
-* **1. Install a package**
-  * [1-install_a_package.pp](./1-install_a_package.pp): Puppet manifest file
-  that install `flask` from pip3.
+```sh
+# installing puppet and puppet-lint
+wget https://apt.puppet.com/puppet7-release-focal.deb && \
+    dpkg -i puppet7-release-focal.deb && \
+    apt-get update && \
+    apt-get install puppet-agent puppet-lint -y
 
-* **2. Execute a command**
-  * [2-execute_a_command.pp](./2-execute_a_command.pp): Puppet manifest file
-  that kills the process `killmenow`.
+# confirming installation
+puppet -V
+puppet-lint -v
+
+# If you get an error saying puppet command not found, source the path
+source /etc/profile.d/puppet-agent.sh
+```
+
+## Tasks
+
+<details>
+<summary><a href="./0-create_a_file.pp">0. Create a file</a></summary><br>
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/NM2k46hX/image.png' border='0' alt='image'/></a>
+</details>
+
+<details>
+<summary><a href="./1-install_a_package.pp">1. Install a package</a></summary><br>
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/PqVvKj7c/image.png' border='0' alt='image'/></a>
+</details>
+
+<details>
+<summary><a href="./2-execute_a_command.pp">2. Execute a command</a></summary><br>
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/CxZFC13P/image.png' border='0' alt='image'/></a>
+</details>
